@@ -14,7 +14,7 @@ Get-ChildItem "C:\ProgramData\Temp\" -Recurse `
 (gwmi win32_product `
     | where {$_.name -match "Teams"}).Uninstall
 
-Remove-Item "C:\Program Files (x86)\Microsoft\Teams" -Recurse -Force
+Remove-Item "C:\Program Files\Microsoft\Teams" -Recurse -Force
 
 Remove-Item "HKLM:\SOFTWARE\Microsoft\Teams" -Recurse -Force
 
